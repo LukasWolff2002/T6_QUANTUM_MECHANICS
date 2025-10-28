@@ -115,11 +115,11 @@ def main():
     # Paso 1: Alice
     alice_bits  = rand_bits(N_BITS)
     alice_bases = rand_bases(N_BITS)
-    write_alice_file("alice_bb84.txt", alice_bits, alice_bases)
+    write_alice_file("PARTE_1/alice_bb84.txt", alice_bits, alice_bases)
 
     # Paso 2: Bob genera bases
     bob_bases = rand_bases(N_BITS)
-    write_bob_bases_file("bob_bb84_bases.txt", bob_bases)
+    write_bob_bases_file("PARTE_1/bob_bb84_bases.txt", bob_bases)
 
     # Paso 3: Bob mide
     measured = measure(alice_bits, alice_bases, bob_bases, noise_flip_prob=NOISE_FLIP_PROB)
@@ -143,8 +143,8 @@ def main():
     )
 
     # Guardar clave cruda (sin revelar las posiciones muestreadas)
-    with open("raw_key_alice.txt", "w", encoding="utf-8") as fa, \
-         open("raw_key_bob.txt", "w", encoding="utf-8") as fb:
+    with open("PARTE_1/raw_key_alice.txt", "w", encoding="utf-8") as fa, \
+         open("PARTE_1/raw_key_bob.txt", "w", encoding="utf-8") as fb:
         fa.write("".join(map(str, raw_A)) + "\n")
         fb.write("".join(map(str, raw_B)) + "\n")
 
