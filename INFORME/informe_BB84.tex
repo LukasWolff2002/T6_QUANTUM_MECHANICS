@@ -75,5 +75,100 @@ El intento de espionaje introduce perturbaciones detectables. Si Eve mide con un
 de modo que cuando Bob mida (incluso con la base correcta), tiene un 50\% de probabilidad de obtener el bit erróneo.
 El resultado es que la tasa de error esperada (\textbf{QBER}) se eleva aproximadamente a un \textbf{25\%}.
 
+
+\section{Detección de la presencia de Eve y autenticación del canal clásico}
+
+\subsection*{3. ¿Es posible detectar la presencia de Eve?}
+
+Sí, es posible detectar la presencia de un espía (\textbf{Eve}) mediante la estimación de la 
+\textbf{tasa de error cuántica} o \textbf{QBER} (\textit{Quantum Bit Error Rate}). 
+Cuando Eve intenta interceptar y medir los fotones enviados por Alice, 
+su medición altera los estados cuánticos originales debido al principio de indeterminación 
+y al teorema de no clonación. Como consecuencia, Bob recibe un conjunto de bits con 
+errores adicionales respecto a los de Alice.
+
+Después de la transmisión, Alice y Bob comunican públicamente una muestra de sus bits 
+por un \textbf{canal clásico}, comparando los resultados para estimar el QBER:
+
+\[
+QBER = \frac{N_{\text{errores}}}{N_{\text{bits\ evaluados}}}.
+\]
+
+Si el canal es ideal y no existe Eve, el QBER debería ser cercano a $0\%$.  
+Sin embargo, si Eve realiza un ataque de \textit{interceptación y reenvío}, 
+el valor esperado es aproximadamente $25\%$.
+
+\subsubsection*{Entropía y límite del 11\%}
+
+La capacidad de Alice y Bob para obtener una clave segura depende de la 
+\textbf{entropía mutua} entre sus secuencias ($I_{AB}$) y la información potencial 
+que Eve puede haber obtenido ($I_{AE}$).  
+La condición de seguridad asintótica es:
+
+\[
+I_{AB} > I_{AE}.
+\]
+
+Utilizando el formalismo de Shannon, el contenido de información de un bit con 
+probabilidad de error $e$ se expresa mediante la \textbf{entropía binaria}:
+
+\[
+H(e) = -e \log_2(e) - (1-e)\log_2(1-e).
+\]
+
+Durante la fase de \textit{amplificación de privacidad}, el número de bits seguros que pueden 
+extraerse se aproxima por:
+
+\[
+R \approx 1 - 2H(QBER).
+\]
+
+Para que la clave final sea positiva ($R > 0$), se requiere que la entropía no supere un 
+valor crítico. Resolviendo $1 - 2H(QBER) = 0$ se obtiene el umbral:
+
+\[
+QBER_{\text{máx}} \approx 0.1100 \ \text{(11\%)}.
+\]
+
+Por encima de este límite, la información que Eve podría haber adquirido supera la que 
+Alice y Bob comparten de forma segura, haciendo imposible la generación de una clave secreta.  
+Por debajo de este umbral, la información de Eve es menor que la correlación entre 
+Alice y Bob, y por lo tanto la clave puede \textbf{purificarse} mediante corrección de errores 
+y amplificación de privacidad.
+
+En resumen, el protocolo BB84 es seguro si:
+
+\[
+QBER < 11\%.
+\]
+
+\subsection*{4. ¿Cómo se puede autentificar el canal clásico?}
+
+El canal clásico utilizado para la comunicación pública entre Alice y Bob no necesita ser 
+confidencial, pero sí debe ser \textbf{autenticado}, es decir, debe garantizarse que los 
+mensajes no puedan ser modificados ni falsificados por Eve.  
+Si Eve pudiera alterar el canal clásico, podría introducir mensajes falsos o reemplazar 
+los de Alice y Bob, rompiendo la integridad del protocolo.
+
+La autenticación puede lograrse mediante \textbf{códigos de autenticación universales}, 
+también conocidos como \textbf{Wegman--Carter MACs}.  
+En este esquema, Alice y Bob comparten una corta clave secreta inicial $k$, y cada mensaje 
+$m$ transmitido se acompaña de una etiqueta de autenticación $t = h_k(m)$, donde 
+$h_k$ pertenece a una familia de funciones hash universales.  
+Eve, sin conocer $k$, no puede generar una etiqueta válida para un mensaje falso.
+
+Después de cada sesión de distribución cuántica, una pequeña fracción de la nueva clave 
+se reserva para reemplazar la clave de autenticación $k$, asegurando así la continuidad 
+del sistema sin necesidad de recurrir nuevamente a un canal precompartido.
+
+En resumen:
+\begin{itemize}
+    \item La detección de Eve se realiza midiendo el QBER y verificando si excede el 11\%.
+    \item El canal clásico debe ser autenticado para evitar ataques de suplantación o manipulación.
+    \item La combinación de detección (entropía cuántica) y autenticación (seguridad clásica) 
+          garantiza la inviolabilidad del protocolo BB84.
+\end{itemize}
+
 \end{document}
+
 
