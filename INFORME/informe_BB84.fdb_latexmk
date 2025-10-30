@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1761744783.62362 "/Users/lukaswolff/Desktop/25_20/QUANTUM_MECHANICS/TAREAS/TAREA_6/INFORME/informe_BB84.tex" "informe_BB84.pdf" "informe_BB84" 1761744784.23996 2
-  "/Users/lukaswolff/Desktop/25_20/QUANTUM_MECHANICS/TAREAS/TAREA_6/INFORME/informe_BB84.tex" 1761744783.60369 9843 6266c61645079a36fa11059ebcae3408 ""
+["pdflatex"] 1761830318.09972 "/Users/lukaswolff/Desktop/25_20/QUANTUM_MECHANICS/TAREAS/TAREA_6/INFORME/informe_BB84.tex" "informe_BB84.pdf" "informe_BB84" 1761830318.75516 0
+  "/Users/lukaswolff/Desktop/25_20/QUANTUM_MECHANICS/TAREAS/TAREA_6/INFORME/informe_BB84.tex" 1761830260.24779 10215 df8c14074f10521cb40c842d965ffb7c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -108,10 +108,11 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1710685657.15962 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1710685568 8221436 9feefa88f893c4604437a3bcd513880c ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "caso_1.png" 1761744672.54992 18851 2d397cc375d7ec7e52c8601d71916c49 ""
-  "informe_BB84.aux" 1761744784.16272 1970 a512ba62afe90bce432c79991b995e27 "pdflatex"
-  "informe_BB84.out" 1761744784.16399 2427 69f145334c9ce9b60cb0f73559c02c71 "pdflatex"
-  "informe_BB84.tex" 1761744783.60369 9843 6266c61645079a36fa11059ebcae3408 ""
+  "caso_1.png" 1761830141.49383 18851 2d397cc375d7ec7e52c8601d71916c49 ""
+  "caso_2.png" 1761830169.87566 26367 3dd412fee6a5feeb071bae4d34d021ff ""
+  "informe_BB84.aux" 1761830318.67493 2136 cfc356f26bc8405c889cdfb06cd413df "pdflatex"
+  "informe_BB84.out" 1761830318.67617 2427 69f145334c9ce9b60cb0f73559c02c71 "pdflatex"
+  "informe_BB84.tex" 1761830260.24779 10215 df8c14074f10521cb40c842d965ffb7c ""
   (generated)
   "informe_BB84.aux"
   "informe_BB84.log"

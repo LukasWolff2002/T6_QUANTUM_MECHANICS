@@ -191,6 +191,11 @@ INPUT ./caso_1.png
 INPUT ./caso_1.png
 INPUT ./caso_1.png
 INPUT ./caso_1.png
+INPUT ./caso_2.png
+INPUT ./caso_2.png
+INPUT ./caso_2.png
+INPUT ./caso_2.png
+INPUT ./caso_2.png
 INPUT informe_BB84.aux
 INPUT ./informe_BB84.out
 INPUT ./informe_BB84.out

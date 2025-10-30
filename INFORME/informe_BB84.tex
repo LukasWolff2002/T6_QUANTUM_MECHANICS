@@ -178,7 +178,7 @@ realiza las mediciones correspondientes y calcula el QBER resultante.
 
 Luego de que ALice y Bob realizan el protocolo sin la intervención de Eve, se obtiene el siguiente resultado:
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{caso_1.png}
     \caption{Resultados del protocolo BB84 sin intervención de Eve.}
@@ -186,6 +186,17 @@ Luego de que ALice y Bob realizan el protocolo sin la intervención de Eve, se o
 
 Donde se observa que el QBER es $0\%$, donde un $50\%$ de los bits son descartados
 debido a la falta de coincidencia de bases entre Alice y Bob.
+
+En el caso que hay una intervencion de Eve, se obtiene el siguiente resultado:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{caso_2.png}
+    \caption{Resultados del protocolo BB84 con intervención de Eve.}
+\end{figure}
+
+Donde se observa que el QBER es aproximadamente $25\%$, lo que indica la presencia
+de un espía en el canal de comunicación.
 
 \end{document}
 
