@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1761830318.09972 "/Users/lukaswolff/Desktop/25_20/QUANTUM_MECHANICS/TAREAS/TAREA_6/INFORME/informe_BB84.tex" "informe_BB84.pdf" "informe_BB84" 1761830318.75516 0
-  "/Users/lukaswolff/Desktop/25_20/QUANTUM_MECHANICS/TAREAS/TAREA_6/INFORME/informe_BB84.tex" 1761830260.24779 10215 df8c14074f10521cb40c842d965ffb7c ""
+["pdflatex"] 1761830516.25091 "/Users/lukaswolff/Desktop/25_20/QUANTUM_MECHANICS/TAREAS/TAREA_6/INFORME/informe_BB84.tex" "informe_BB84.pdf" "informe_BB84" 1761830516.8834 0
+  "/Users/lukaswolff/Desktop/25_20/QUANTUM_MECHANICS/TAREAS/TAREA_6/INFORME/informe_BB84.tex" 1761830516.07774 10371 5b86dd85d1d00d7c6a83fa78202659f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -110,9 +110,9 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "caso_1.png" 1761830141.49383 18851 2d397cc375d7ec7e52c8601d71916c49 ""
   "caso_2.png" 1761830169.87566 26367 3dd412fee6a5feeb071bae4d34d021ff ""
-  "informe_BB84.aux" 1761830318.67493 2136 cfc356f26bc8405c889cdfb06cd413df "pdflatex"
-  "informe_BB84.out" 1761830318.67617 2427 69f145334c9ce9b60cb0f73559c02c71 "pdflatex"
-  "informe_BB84.tex" 1761830260.24779 10215 df8c14074f10521cb40c842d965ffb7c ""
+  "informe_BB84.aux" 1761830516.80906 2136 3e0f672db2be0c51c2bd38bec8c37abf "pdflatex"
+  "informe_BB84.out" 1761830516.81027 2427 69f145334c9ce9b60cb0f73559c02c71 "pdflatex"
+  "informe_BB84.tex" 1761830516.07774 10371 5b86dd85d1d00d7c6a83fa78202659f4 ""
   (generated)
   "informe_BB84.aux"
   "informe_BB84.log"
